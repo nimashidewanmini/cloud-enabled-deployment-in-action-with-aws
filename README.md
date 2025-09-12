@@ -1,52 +1,140 @@
-# Cloud Enabled Deployment In Action with AWS
 
-This repository contains four projects:
+# Cloud Enabled Deployment In Action
 
-- course-service (Spring Boot + MySQL)
-- student-service (Spring Boot + MongoDB)
-- media-service (Spring Boot + Local file storage, can be extended to S3/MinIO)
-- frontend-app (React + TypeScript)
+## Introduction
+his repository highlights a cloud-powered  microservices architecture built with Spring Boot , React , AWS , GCP , and Docker . It demonstrates how to develop , containerize , and deploy  both backend services and a frontend app, leveraging a mix of cloud-managed  and self-hosted  databases.
+
+The repository is organized into four main projects:
+
+- course-service → Spring Boot + MySQL
+
+- student-service → Spring Boot + MongoDB
+
+- media-service → Spring Boot + local file storage (extensible to S3/MinIO)
+
+- frontend-app → React + TypeScript
+
 
 ## Backend Services
 
-### 1. course-service
+**1.** **course-service:**
+
 - Entity: Course(id, name, duration)
 - Endpoints:
+
   - GET /courses
   - GET /courses/{id}
   - POST /courses
   - DELETE /courses/{id}
-- Default port: 8081
-- Configure MySQL settings
 
-### 2. student-service
+- Default Port: 8081
+
+- Configuration: Connects to MySQL
+
+**2.** **student-service:**
+
 - Document: Student(registrationNumber, fullName, address, contact, email)
-- Endpoints:
-  - GET /students
-  - GET /students/{id}
-  - POST /students
-  - DELETE /students/{id}
-- Default port: 8082
-- Configure MongoDB settings
 
-### 3. media-service
-- Resource: files
 - Endpoints:
-  - POST /files (multipart/form-data: file)
-  - GET /files (list)
-  - GET /files/{id} (fetch)
-  - DELETE /files/{id} (delete)
-- Default port: 8083
-- Uses local disk storage at `./data/media` by default (override with env var `MEDIA_STORAGE_DIR`).
+
+  - GET /students
+
+  - GET /students/{id}
+
+  -  POST /students
+
+  -  DELETE /students/{id}
+
+- Default Port: 8082
+
+- Configuration: Uses MongoDB
+
+**3.** **media-service:**
+
+- Resource: files
+
+- Endpoints:
+
+  - POST /files → upload (multipart/form-data)
+
+  - GET /files → list all files
+
+  - GET /files/{id} → fetch file
+
+  - DELETE /files/{id} → delete file
+
+- Default Port: 8083
 
 ## Frontend (frontend-app)
-- React + TypeScript + MUI + Axios + Vite app with 3 sections: Courses, Students, Media
+
+- Stack: React + TypeScript + MUI + Axios + Vite
+
+- Sections: Courses | Students | Media
+
 - Scripts:
-  - npm run dev (Vite dev server)
-  - npm run build (TypeScript build + Vite build)
-  - npm run preview (Preview built app)
 
-## Build
+  - npm run dev → Start Vite dev server
 
-- Backend: run `mvn -q -e -DskipTests package` at repo root to build services.
-- Frontend: run `npm install` then `npm run dev` inside `frontend-app`.
+  -  npm run build → Compile TypeScript + Vite build
+
+  - npm run preview → Preview production build
+
+
+### Build
+
+- Backend: Run
+```bash
+mvn -q -e -DskipTests package
+
+``` 
+- Frontend: Run
+```bash
+npm install
+npm run dev
+
+``` 
+### 📌 Build with
+
+- Spring Boot 🍃
+
+- React.js ⚛️
+
+- TypeScript 🔷
+
+- Node.js 🟩
+
+- NPM 📦
+
+- MySQL 🟨
+
+- MongoDB 🟦
+
+### 📌 Deploy & Containerize:
+
+- AWS ☁️
+
+- Google Cloud 🔵
+
+- Docker 🐳
+
+### 📌 Demo Video:
+
+- [watch](https://drive.google.com/file/d/10uWht31Oq65muZlBGeDhiayspYlo1HLW/view?usp=sharing)
+
+
+### Clone the repository:
+
+```bash
+git clone https://github.com/nimashidewanmini/cloud-enabled-deployment-in-action-with-aws.git
+```  
+
+
+
+## License
+This project is licensed under the MIT License - see the [MIT License](LICENSE) file for details.
+
+<br>
+
+<p align="center">
+  &copy; 2024 Nimashi Dewanmini
+</p>
