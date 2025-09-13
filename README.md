@@ -2,8 +2,7 @@
 # Cloud Enabled Deployment In Action
 
 ## Introduction
-his repository highlights a cloud-powered  microservices architecture built with Spring Boot , React , AWS , GCP , and Docker . It demonstrates how to develop , containerize , and deploy  both backend services and a frontend app, leveraging a mix of cloud-managed  and self-hosted  databases.
-
+This repository highlights a cloud-powered ☁️ microservices architecture built with Spring Boot 🍃, React ⚛️, AWS 🟨, GCP 🔵, and Docker 🐳. It demonstrates how to develop 🛠️, containerize 📦, and deploy 🚢 both backend services and a frontend app, leveraging a mix of cloud-managed 🌐 and self-hosted 🖥️ databases.
 The repository is organized into four main projects:
 
 - course-service → Spring Boot + MySQL
