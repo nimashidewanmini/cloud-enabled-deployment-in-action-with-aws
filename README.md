@@ -134,6 +134,17 @@ This project is licensed under the MIT License - see the [MIT License](LICENSE) 
 
 <br>
 
+<br>
+
+## 📄 Student Information
+
+- **Name:** Nimashi Dewanmini
+- **Registration Number:** 2301682013
+- **Email Address:** nimashidewanmini@gmail.com
+
+<br>
+
+
 <p align="center">
   &copy; 2024 Nimashi Dewanmini
 </p>
