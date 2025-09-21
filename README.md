@@ -113,7 +113,7 @@ npm run dev
 - [watch](https://drive.google.com/file/d/10uWht31Oq65muZlBGeDhiayspYlo1HLW/view?usp=sharing)
 
 
-### Clone the repository:
+### 📌 Clone the repository:
 
 ```bash
 git clone https://github.com/nimashidewanmini/cloud-enabled-deployment-in-action-with-aws.git
@@ -121,7 +121,7 @@ git clone https://github.com/nimashidewanmini/cloud-enabled-deployment-in-action
 
 
 
-## License
+## 📌 License
 This project is licensed under the MIT License - see the [MIT License](LICENSE) file for details.
 
 <br>
